@@ -29,7 +29,7 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "escodegen": "^1.6.1",
+    "escodegen": "^1.8.1",
     "esprima": "^3.1.0",
     "unassert": "^1.0.0"
   },

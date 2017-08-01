@@ -17,7 +17,8 @@ module.exports = function(jsCode) {
   var ast = esprima.parse(jsCode,{
       range: true,
       tokens: true,
-      comment: true
+      comment: true,
+      sourceType: 'module'
   });
   var attachedAst = escodegen.attachComments(ast, ast.comments, ast.tokens);
   var modifiedAst = unassert(attachedAst);
@@ -25,4 +26,3 @@ module.exports = function(jsCode) {
       comment: true
   }), null);
 };
-
